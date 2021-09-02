@@ -18,7 +18,7 @@ const displayBook = books => {
     bookField.innerHTML = '';
     if(books.length === 0){
         div.innerHTML=`
-        <p>Something went wrong try again letter</p>`;
+        <p>Something went wrong try again...</p>`;
         result.innerHTML='';  
     }
     books.forEach(book => {
