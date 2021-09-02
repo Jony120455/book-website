@@ -1,5 +1,4 @@
 const div = document.getElementById('error-messege');
-
 let searchItem = () => {
     let result = document.getElementById('result')
     const searchBtn = document.getElementById('search-button')
@@ -18,11 +17,9 @@ const displayBook = books => {
     const bookField = document.getElementById('book-field');
     bookField.innerHTML = '';
     if(books.length === 0){
-        
         div.innerHTML=`
         <p>Something went wrong try again letter</p>`;
-        result.innerHTML='';
-       
+        result.innerHTML='';  
     }
     books.forEach(book => {
         // Show Display Book Result 0 - 50
